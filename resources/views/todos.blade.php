@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-    <br><br><br><br>
+    <br><br><br><br><br><br>
     <div class="row">
         <div class="col-lg-6 col-lg-offset-3">
             <form action="/create/todo" method="post">
@@ -17,6 +17,9 @@
         {{ $todo->todo }} <a href="{{ route('todo.delete',
         ['id' => $todo->id]) }}"
         class="btn btn-danger">x</a>
+        <a href="{{ route('todo.update',
+        ['id' => $todo->id]) }}"
+        class="btn btn-info btn-xs">update</a>
         <hr>
     @endforeach
 @stop
