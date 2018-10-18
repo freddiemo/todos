@@ -1,8 +1,7 @@
 @extends('layout')
 
 @section('content')
-    <br><br><br><br><br><br>
-    <div class="row">
+    <div class="row" style="padding-top: 25%;">
         <div class="col-lg-6 col-lg-offset-3">
             <form action="/create/todo" method="post">
                 {{ csrf_field() }}
